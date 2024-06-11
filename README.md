@@ -31,6 +31,7 @@ System will measure local envoriment at Node and then send the data to Gateway u
 
 # Schematic
 - Node:
+
   STM32F103C8T6 interfaces with SHT31(sensor 1) and BMP180(sensor 2)
   
   ![image](https://github.com/nhattruong05022003/Project1/assets/145974955/5d0ab514-c0c1-49e3-855f-1606659e5e23)
