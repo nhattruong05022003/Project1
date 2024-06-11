@@ -41,19 +41,16 @@ int current_index = 0;
 
 // Firebase
 
-#define FIREBASE_HOST "enviromentmoritering-default-rtdb.firebaseio.com/" //2 cái này lấy trong FB nhé
-#define API_KEY "AIzaSyBQIn4S4QqTubmohR0n7DPo7Kpc-6sx--M"
+#define FIREBASE_HOST "" //2 cái này lấy trong FB nhé
+#define API_KEY ""
 
-#define USER_EMAIL "nhattruong05022003@gmail.com" // email của mình
-#define USER_PASSWORD "truong05022003"
+#define USER_EMAIL "" // email của mình
+#define USER_PASSWORD ""
 
 
 
-// const char* ssid = "NhatTruong"; 
-// const char* password = "05022003";
-
-// const char* ssid = "Gg"; 
-// const char* password = "ggmedi123";
+// const char* ssid = ""; 
+// const char* password = "";
 
 FirebaseData stream;
 FirebaseData firebaseData;
@@ -102,17 +99,6 @@ void setup() {
     ESP.restart();
     delay(5000);
   }
-  // Serial.print("IP address : ");
-  // Serial.println(WiFi.localIP());
-
-  // WiFi.begin(ssid, password);
-  // Serial.print("Connecting to : ");
-  // Serial.println(ssid);
-  // while (WiFi.status() != WL_CONNECTED){
-  //   delay(500);
-  //   Serial.print(".");
-  // }
-  // Serial.println();
 
   config.host = FIREBASE_HOST;
   config.api_key = API_KEY;
