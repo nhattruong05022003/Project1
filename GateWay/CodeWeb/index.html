@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>GATEWAY</title>
+</head>
+<body>
+        <header>
+            <a href="#" class="logo"><img src="img/ho_chi_minh_university_of_technology_and_education_cover.jpg" alt=""></a>
+            <!-- <nav>
+                  <div class="nav_link">
+                    <a href="#Spec">Spec</a>
+                    <a href="#control">Control</a>
+                    <a href="#Contact">Contact Us</a>
+                 </div>
+            </nav> -->
+        </header>
+        <!-- --------------THÔNG SỐ---------------- -->
+            <div class="container">
+              <h1>THÔNG SỐ</h1>
+              <div class="box-specs">
+                <div class="box" id = "box-temp">
+                  <img src="img/heat.png" alt="">
+                  <h3>NHIỆT ĐỘ (°C)</h3>
+                  <!-- <a href="#" class="btn">read more</a> -->
+                  <span id = "tempVal">29</span>
+               </div>
+                <div class="box" id = "box-humid">
+                    <img src="img/humidity.png" alt="">
+                    <h3>ĐỘ ẨM (%)</h3>
+                    <!-- <a href="#" class="btn">read more</a> -->
+                    <span id = "humidVal">45</span>
+                </div>
+                <div class="box" id = "box-press">
+                    <img src="img/pressure.png" alt="">
+                    <h3>ÁP SUẤT (Pa)</h3>
+                    <!-- <a href="#" class="btn">read more</a> -->
+                    <span id = "pressVal">45</span>
+                </div>
+              </div>
+
+              
+        <!-- -------------- BIỂU ĐỒ---------------- -->
+              <h1>BIỂU ĐỒ</h1>
+              <div class="box-graph">
+
+                <div class="box">
+                  <h3>NHIỆT ĐỘ (°C)</h3>
+                  <div class="graph">
+                    <div>
+                        <canvas id="TemChart"></canvas>
+                        <div class="sensor-off-overlay-1">Sensor is Off</div> 
+                      </div>  
+                </div>
+                </div>
+      
+                <div class="box">
+                  <h3>ĐỘ ẨM (%)</h3>
+                  <div class="graph">
+                    <div>
+                        <canvas id="HumidChart"></canvas>
+                        <div class="sensor-off-overlay-3">Sensor is Off</div> 
+                      </div>  
+                </div>
+                </div>
+
+                <div class="box">
+                  <h3>ÁP SUẤT (Pa)</h3>
+                  <div class="graph">
+                    <div>
+                      <canvas id="PressChart"></canvas>
+                      <div class="sensor-off-overlay-2">Sensor is Off</div> 
+                    </div>  
+                </div>
+              </div>
+              </div>
+            </div>
+        
+        <!-- --------------Input---------------- -->
+
+        <div class="wrapper">
+          <h1>Cấu hình ngưỡng</h1>
+          <div class="input-data">
+            <h4>Nhập ngưỡng nhiệt độ: </h4>
+            <input type="text" required>
+            <label>Nhập</label>
+            <div class="underline"></div>
+            <div class="btn-send">
+              <a href="#" class="btn" id="SendTemp">SEND</a>
+            </div>
+            <div class="error-message">Vui lòng nhập số</div>
+          </div>
+
+
+          <div class="input-data">
+            <h4>Nhập ngưỡng độ ẩm: </h4>
+            <input type="text" required>
+            <label>Nhập</label>
+            <div class="underline"></div>
+            <div class="btn-send">
+              <a href="#" class="btn" id="SendHumid">SEND</a>
+            </div>
+            <div class="error-message">Vui lòng nhập số</div>
+          </div>
+
+
+          <div class="input-data">
+            <h4>Nhập ngưỡng áp suất: </h4>
+            <input type="text" required>
+            <label>Nhập</label>
+            <div class="underline"></div>
+            <div class="btn-send">
+              <a href="#" class="btn" id="SendPress">SEND</a>
+            </div>
+            <div class="error-message">Vui lòng nhập số</div>
+          </div>
+        </div>
+
+        <!-- --------------Footer---------------- -->
+        <footer class="footer">
+          <div class="containerFooter">
+            <div class="row">
+              <div class="footer-col">
+                <h4>Team</h4>
+                <ul>
+                  <li><a href="#">Nguyen Nhat Truong - 21139086@hcmute.edu.vn</a></li>
+                  <li><a href="#">Tran Dao Anh Trung - 21139085@hcmute.edu.vn</a></li>
+                </ul>
+              </div>
+              <!-- <div class="footer-col">
+                <h4>Danh Muc</h4>
+                <ul>
+                  <li><a href="#">Condition & Graph</a></li>
+                  <li><a href="#">Control</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div> -->
+              <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 id="hiddentext">0</h1>
+       </footer>
+    <script type = "module" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

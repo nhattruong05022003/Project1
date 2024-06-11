@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css2? family=Poppins: wght@300;400;500;600;700; 800;900& display=swap");
+*{ 
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body { 
+    background: url(img/backgound.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+header {
+  position: fixed;
+  height: 30vh;
+  width: 100%;
+  padding: 20px 90px;
+  background:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+}
+
+
+.logo {
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+
+.nav_link a{
+  max-width: 100%; 
+  position: relative;
+  font-size: 18px;
+  color: black; 
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+  transition: .3s;
+}
+.nav_link a::before {
+  content:"";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #149279;
+}
+
+.nav_link a:hover::before { 
+  width: 100%;
+  transition: .5s;
+}
+/*----------------------section---------------------*/
+section{
+  height: auto;
+  background: transparent; 
+  padding-top : 10vh;  
+  overflow: hidden;
+}
+
+.container{
+  margin: 0 auto;
+  width: 90%;
+  padding:15px 3%;
+  padding-top: 13%;
+  text-align: center;
+}
+
+.container h1 {
+  color: whitesmoke;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background: linear-gradient(to right, #0073b7, #e91e63);
+  background-size: 200% 200%; /* Kích thước gradient */
+  animation: gradient 10s infinite;
+}
+
+.container .heading{
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(to right, #f09819, #edde5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  color:#fff;
+  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-size: 50px;
+}
+
+/* --------------------THÔNG SỐ------------------- */
+
+.container .box-specs{
+  max-height: 500px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap:15px;
+  display: flex;
+  justify-content: center;
+}
+
+.container .box-specs .box{
+  width: 30%;
+  height: 90%;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  padding:30px 20px;
+
+  border: 2px solid; /* Set a basic 2px solid border */
+
+  /* Example colors - Customize these! */
+  border-color: #149279; /* Top, right, bottom, left */
+  font-size: 20px;
+}
+
+.container .box-specs .box img{
+  height: 43%;
+}
+
+.container .box-specs .box h3{
+
+  color:#444;
+  font-size: 22px;
+  padding:13%;
+}
+
+.container .box-specs .box p{
+  color:#777;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.container .box-specs .box .btn{
+  margin-top: 10px;
+  display: inline-block;
+  background:#333;
+  color:#fff;
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 8px 25px;
+}
+
+.container .box-specs .box .btn:hover{
+  letter-spacing: 1px;
+}
+
+.container .box-specs .box:hover{
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px rgba(0,0,0,.3);
+  transform: scale(1.03);
+}
+
+
+
+/* ------------------ box Graph-------------- */
+.container .box-graph{
+  padding-top: 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap:15px;
+  display: flex;     /* Bật Flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  height: 400px;
+  width: 100%;
+}
+
+
+.container .box-graph .box{
+  /* min-width: 200px; /* Chiều rộng tối thiểu */
+  /*max-width: 600px; /* Chiều rộng tối đa */
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  padding:30px 20px;
+  
+}
+
+.container .box-graph .box img{
+  height: 80px;
+}
+
+.container .box-graph .box h3{
+  color:#444;
+  font-size: 22px;
+  padding:10px 0;
+}
+
+.graph{
+  width: 100%;
+  height: 90%;
+  border-radius: 1rem;
+  background: #251c35;
+  box-shadow: 0 16px rgba(0, 0, 0, 0.);
+  float: left;
+  margin-left: 1%;
+}
+
+/* ... other styles remain the same ... */
+
+.graph {
+  /* ... */
+  position: relative; /* To position the overlay correctly */
+}
+
+.sensor-off-overlay-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+  color: white;
+  display: flex;
+  align-items: center;  /* Center the text vertically */
+  justify-content: center; /* Center the text horizontally */
+  display: none;           /* Hide initially */
+}
+
+.sensor-off-overlay-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+  color: white;
+  display: flex;
+  align-items: center;  /* Center the text vertically */
+  justify-content: center; /* Center the text horizontally */
+  display: none;           /* Hide initially */
+}
+
+.sensor-off-overlay-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+  color: white;
+  display: flex;
+  align-items: center;  /* Center the text vertically */
+  justify-content: center; /* Center the text horizontally */
+  display: none;           /* Hide initially */
+}
+/* --------------------------- Text Input------------------ */
+.wrapper{
+  width: 800px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap:15px;
+  display: flex;     /* Bật Flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  height: 200px;
+  width: 100%;
+}
+
+.wrapper h1
+{
+  text-align: center;
+}
+
+.wrapper h4{
+  margin-bottom: 30px;
+}
+
+.wrapper .input-data{
+  height: 40px;
+  width: 30%;
+  position: relative;
+  border: none;
+}
+
+.wrapper .input-data input{
+
+  height: 100%; 
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+}
+.wrapper .input-data input:focus {
+  outline: none;
+}
+
+.wrapper .input-data label{
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-data input:focus label,
+.input-data input:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #4158d0;
+
+}
+
+.wrapper .input-data .underline{
+  position: absolute;
+  bottom: -125%;
+  height: 2px;
+  width: 100%;
+}
+
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #4158d0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before{
+  transform: scaleX(1);
+}
+
+.wrapper .input-data  .btn-send {
+
+  background-color: #007bff; /* Màu xanh */
+  color: #fff;              /* Chữ màu trắng */
+  border: none;             /* Xóa đường viền mặc định */
+  text-decoration: none;    /* Xóa gạch chân (nếu nút SEND là link) */
+  border-radius: 5px;       /* Bo tròn các góc */
+  cursor: pointer;          /* Hiển thị con trỏ chuột dạng bàn tay khi di chuột */
+  margin-top: 3%;
+  display: inline-block;
+}
+
+.error-message {
+  color: red; 
+  display: none; /* Giấu thông báo lỗi ban đầu */
+}
+
+
+.wrapper .btn:hover {
+  background-color: #0056b3; /* Màu xanh đậm hơn khi di chuột lên */
+} 
+
+.wrapper .btn {
+  /* ... Các thuộc tính CSS cơ bản như ở trên */
+  transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+
+/* ------------------------Footer------------------------ */
+.containerFooter{
+	max-width: 1170px;
+	max-height: 600px;
+  height: 80px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #4088c3;
+  padding: 5% 2%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.footer-col{
+  width: 33%;
+  padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+#hiddentext
+{
+  display: none;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
