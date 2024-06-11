@@ -31,9 +31,8 @@ const int resetPin = 14;        // LoRa radio reset
 const int irqPin = 2;          // change for your board; must be a hardware interrupt pin
 
 // Wifi
-/* điền SSID & Password của ESP32*/
-const char* ssid = "Truong"; 
-const char* password = "05022003";
+const char* ssid = ""; 
+const char* password = "";
 int c = 0;
 int storeT = 0;
 int storeH = 0;
