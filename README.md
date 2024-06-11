@@ -1,6 +1,6 @@
 # Simple Project transmits data between Node and Gateway using LoRa
 
-System will measure local envoriment at Node and then the data to Gateway using LoRa. Gateway will upload the data to Cloud to display on the website. Each Node will be an access point so you can connect its WiFi to turn on / off the sensor or set the time between each sampling.
+System will measure local envoriment at Node and then send the data to Gateway using LoRa. Gateway will upload the data to Cloud to display on the website. Each Node will be an access point so you can connect its WiFi to turn on / off the sensor or set the time between each sampling.
 
 # Components:
 - STM32F103C8T6 x 1
