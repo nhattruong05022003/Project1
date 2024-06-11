@@ -71,11 +71,12 @@ System will measure local envoriment at Node and then send the data to Gateway u
 
 # Note
   Note 1 : Change the Firebase config and Wifi config at Node(ESP32) code.
+  
   Note 2 : After power up the gateway you have to connect to 
 
   ![image](https://github.com/nhattruong05022003/Project1/assets/145974955/ac5e933a-8818-4bc7-9675-d3ae0dff78cc)
 
-  and then click Configure WiFi
+  Go to 192.168.4.1 and then click Configure WiFi
   
   ![image](https://github.com/nhattruong05022003/Project1/assets/145974955/02aa1f75-ec12-4ffa-bd8b-6cd2d059b2e3)
 
