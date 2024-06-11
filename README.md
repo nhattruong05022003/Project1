@@ -9,8 +9,8 @@ System will measure local envoriment at Node and then send the data to Gateway u
  
 - ESP32 x 2
 
-  ![image](https://github.com/nhattruong05022003/Project1/assets/145974955/186d93b8-3469-4999-91d3-16d7a99828a5)
-  
+  ![image](https://github.com/nhattruong05022003/Project1/assets/145974955/1c04da16-2244-45f7-85e6-fad05c94bae1)
+
 - LoRa SX1278 x 2
 
   ![image](https://github.com/nhattruong05022003/Project1/assets/145974955/3d2b2dc5-2e87-4a6d-961a-5efe47b64f41)
